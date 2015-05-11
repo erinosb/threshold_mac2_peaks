@@ -45,8 +45,8 @@ Output is:     a file1_peaks_greaterN.bed in which only the .bed entries with a 
                         
                         
 ####USAGE
-*perl threshold_macs2_peaks.pl --score <N> --list <file1.txt>*
+`perl threshold_macs2_peaks.pl --score <N> --list <file1.txt>`
 
 OR
        
-*perl threshold_macs2_peaks.pl --score <N> --bed <file1.bed,file2.bed>*
+`perl threshold_macs2_peaks.pl --score <N> --bed <file1.bed,file2.bed>`
