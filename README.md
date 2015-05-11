@@ -14,12 +14,12 @@ I typically have MACS2 output that I would like to threshold for peaks over a gi
 Input is EITHER a LIST file containing the name of a bed file on each line
                    OR a comma-separated list of .bed files.
 
-                   `LIST:
+                   LIST:
                         #9_EO038_over_EO042_0.005_peaks.bed
                         #9_EO039_over_EO042_0.005_peaks.bed`
 
                    Each entry in the list must contain an MACS2 peaks_bed file that looks like this when opened:
-                        `#chrI	11176	11732	MACS_peak_1	2.44
+                        #chrI	11176	11732	MACS_peak_1	2.44
                         #chrI	36353	36729	MACS_peak_2	11.35
                         #chrI	38906	39187	MACS_peak_3	28.41
                         #chrI	116506	116931	MACS_peak_4	3.46
@@ -27,7 +27,7 @@ Input is EITHER a LIST file containing the name of a bed file on each line
                         #chrI	128413	128920	MACS_peak_6	5.77
                         #chrI	167901	168157	MACS_peak_7	7.30
                         #chrI	256399	256603	MACS_peak_8	3.47
-                        #chrI	310793	311034	MACS_peak_9	18.68`
+                        #chrI	310793	311034	MACS_peak_9	18.68
                     
                    SCORE:
                        A numeric score for thresholding.
@@ -45,5 +45,7 @@ Output is:     a file1_peaks_greaterN.bed in which only the .bed entries with a 
                         
 ####USAGE
 *perl threshold_macs2_peaks.pl --score <N> --list <file1.txt>*
+
        OR
+       
 *perl threshold_macs2_peaks.pl --score <N> --bed <file1.bed,file2.bed>*
