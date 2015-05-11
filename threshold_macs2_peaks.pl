@@ -47,7 +47,6 @@ use Getopt::Long;
 #        perl threshold_macs2_peaks.pl --score <N> --bed <file1.bed,file2.bed>
 #
 #
-#BUGS:  die commands don't work.
 ################
 
   
